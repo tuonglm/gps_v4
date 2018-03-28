@@ -1,0 +1,8 @@
+{
+  "name": "taris-gps",
+  "app_id": "d56ca830",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
