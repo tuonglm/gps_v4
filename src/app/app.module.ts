@@ -3,9 +3,10 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
+import { UniqueDeviceID } from '@ionic-native/unique-device-id';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,8 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    UniqueDeviceID,
+    DomSanitizer,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
